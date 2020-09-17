@@ -36,5 +36,11 @@
         /*console.log(response)*/
       });
     }
+    function checkLoginState() {
+      FB.getLoginStatus(function (response) {
+        console.log(response)
+      });
+    }
+    checkLoginState()
   </body>
 </html>
