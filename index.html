@@ -16,6 +16,9 @@
       };
     </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
     <h1>AUPsy</h1>
     <div
       class="fb-like"
