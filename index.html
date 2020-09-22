@@ -48,6 +48,15 @@
           document.getElementById('status').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
         });
+        FB.api(
+          '/108235964368233',
+          'GET',
+          {},
+          function(response) {
+              // Insert your code here
+            console.log(response);
+          }
+        );
       }
 
     </script>
